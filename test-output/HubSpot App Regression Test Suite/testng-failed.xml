@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [HubSpot App Regression Test Suite]" parallel="tests">
+  <test thread-count="2" name="login test(failed)" parallel="tests">
+    <parameter name="password" value="Test@1234"/>
+    <parameter name="browser" value="safari"/>
+    <parameter name="url" value="https://app.hubspot.com/login"/>
+    <parameter name="username" value="naveenanimation30@gmail.com"/>
+    <classes>
+      <class name="com.tests.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="pageTitleTest"/>
+          <include name="signUpLinkTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.tests.LoginTest -->
+    </classes>
+  </test> <!-- login test(failed) -->
+</suite> <!-- Failed suite [HubSpot App Regression Test Suite] -->

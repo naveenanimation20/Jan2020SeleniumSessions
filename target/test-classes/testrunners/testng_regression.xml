@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="NaveenAutomation Labs TestNG Sessions Suite">
+	<test name="My testng practice test" verbose="2">
+		
+		<classes>
+			<class name="TestNGSessions.DependsOnMethod" />
+			<class name="TestNGSessions.ExpectedExceptionConcept" />
+			<class name="TestNGSessions.InvocationCountConcept" />
+			<class name="TestNGSessions.PriorityTest" />
+
+		</classes>
+	</test>
+</suite> 
